@@ -34,9 +34,8 @@ Data I work with a dataset of rental ads that I scraped from Google search cache
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://t0mk.github.io/about/</guid>
-      <description>I will try to publish interesting data visualizations on this site.
-I am a freelance IT professional, and besides visualization I focus on Golang development and infrastructure automation (DevOps?).
-In past I worked in Google in Dublin, in CERN in Geneva, I did contract work for Basho, the makers of Riak, and Rovio, the company behind the Angry Birds. I wrote Ansible modules for the Packet host (acquired by Equinix in 2020 and rebranded as Equinix Metal).</description>
+      <description>I am a freelance IT professional, and besides visualization I focus on Golang development and infrastructure automation (DevOps?).
+In past I worked in Google in Dublin, in CERN in Geneva, I did contract work for Basho, the makers of Riak, and Rovio, the company behind the Angry Birds. I wrote Ansible modules for the Packet host (acquired by Equinix in 2020 and rebranded as Equinix Metal). I am maintaining Equinix Metal Terraform Provider and a couple of other intrastructure-related Golang-based tools.</description>
     </item>
     
     <item>
