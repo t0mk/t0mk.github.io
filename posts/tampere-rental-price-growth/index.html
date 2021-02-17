@@ -34,7 +34,7 @@
     <title>Growth of Rental Prices in Tampere in the last 3 Years - Tomas&#39; Visualization Blog</title>
     
     
-    <link rel="stylesheet" href="https://t0mk.github.io/css/style.min.05740284fb8a70193901b6ca276a19fe4ce50fb176f322759883eaecf4267e8a.css">
+    <link rel="stylesheet" href="https://t0mk.github.io/css/style.min.11f9eee36cb859ea6ba58fbf3d9aad5e58d0964cdc6ca49b275779acd8136758.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
@@ -50,7 +50,7 @@
 <meta itemprop="description" content="How rental prices have changed from Jan 2018 to Dec 2020 in Tampere for different types of apartments.">
 <meta itemprop="datePublished" content="2021-02-17T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-02-17T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1359">
+<meta itemprop="wordCount" content="1375">
 <meta itemprop="image" content="https://t0mk.github.io/img/tredev.png">
 
 
@@ -246,7 +246,7 @@
 
     
     
-<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+<aside class="sidebar sidebar-toc collapse in" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
   <div class="slimContent">
     <h4 class="toc-title">Table of Contents</h4>
     <nav id="toc" class="js-toc toc">
@@ -288,16 +288,16 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/tampere-rental-price-growth/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1359words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1375words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 7minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <p>In cities, the price of real estate is growing since ever. The rental prices should follow the selling prices. In this post I explore how the rental prices of apartments grew in the last 3 years (2018, 2019, 2020), and I find subsets of the data, which show different rate of growth, e.g. expensive apartments vs cheap apartments, small apartments vs large apartments, apartments in different neighborhoods.</p>
+      <p>In cities, the price of real estate is growing since ever. The rental prices should follow the selling prices. In this post I explore how the rental prices of apartments in Tamere grew in the last 3 years (2018, 2019, 2020), and I find subsets of the retnal items, which show different rate of growth, e.g. expensive apartments vs cheap apartments, small apartments vs large apartments, apartments in different neighborhoods.</p>
 <h1 id="data">Data</h1>
 <p>I work with the same dataset as in <a href="https://t0mk.github.io/posts/tampere-rental-apartments/#data">the post about rental prices in Tampere</a>. I <a href="https://t0mk.github.io/posts/tampere-rental-apartments/#outlier-removal">remove outliers in the same manner</a>. This time I only consider apartments within 8.5 km from the center of Tampere.</p>
 <p>I don&rsquo;t do any deduplication here. There will more ads for one apartment in the dataset, but it&rsquo;s OK, because they will be counted only for the days when they were published.</p>
-<p>Because I want to see price development of existing real estate, I need to remove all the ads for apartments built after the beginning of the measurement - I drop all items with year-built after the end of 2017. There is about 30000 items in the dataset.</p>
+<p>Because I want to see price development of existing real estate, I need to remove all the ads for apartments built after the beginning of the measurement - I drop all items with year-built after the end of 2017. There is about 30000 items in the dataset - 30000 rental ads for apartments in Tampere.</p>
 <p>To study the change of the prices in time, I create a data structure with items for every day from the 3 years, where there are all the rental ads that were up some time during that day. So that if ad_1 was published only on 2018-01-04; ad_2, ad_3 and ad_4 were published on 2018-01-04 and 2018-01-05; and ad_5 only on 2018-01-05, the data structure will look as:</p>
 <table>
 <thead>
@@ -329,7 +329,7 @@
 </div>
 
 <p>We can see the median apartment rental price in a day in blue, and number of ads in a day in green. Both are actually 30-day rolling averages, just so the plot looks better. We can see that the market of rental apartments is regularly at its lowest in September, after the summer holidays, when school and university starts.</p>
-<p>The median price oscillates up and down but it obviously follows an upward trend. It would be good to measure the rate of the growth. I decided to fit prices in all the days of the 3 years into a linear function, a line that has some vertical offset (mean price in the beginning of the measurements), and a constant rate of change over time - i.e. how much it increases per day or year. The fitted (dashed) line starts at 13.3 in the beginning of 2018, and ends at 14.3 in the end of 2020. The measured rate of change of the fitted line is then 1.03 €/m² in the 3 years, that&rsquo;s 7.8 % growth.</p>
+<p>The median price oscillates up and down but it obviously follows an upward trend. It would be good to measure the rate of the growth. I decided to fit prices in all the days of the 3 years into a linear function - essentially a line that has some vertical offset (mean price in the beginning of the measurements), and a constant rate of change over time - i.e. how much the rent increases per day or year &ldquo;on average&rdquo;. The fitted (dashed) line starts at 13.3 in the beginning of 2018, and ends at 14.3 in the end of 2020. The measured rate of change of the fitted line is then 1.03 €/m² in the 3 years, that&rsquo;s 7.8 % growth.</p>
 <p>To illustrate, 7.8% growth means that if, in January 2018, an average 50 m² apartment in Tampere was 50*13.3 = 665 €/month, in December 2020, it is expected to be 50*14.3 = 715 €/month.</p>
 <p>To understand the situation beter, we need to observe the price growth for various apartment categories. Following sections will categorize rental items based on features, and identify categories with different rate of growth.</p>
 <h2 id="price-categories">Price categories</h2>
@@ -347,7 +347,7 @@
 <li>built between 1910 and 1963</li>
 <li>built between 1963 and 1986</li>
 <li>built between 1986 and 2009</li>
-<li>built between 2009 and 2025</li>
+<li>built between 2009 and 2017</li>
 </ul>
 <p>Let&rsquo;s first see how were apartments of different age proportionally published in the three years:</p>
 <div class='bokehplot'>
