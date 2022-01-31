@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://t0mk.github.io/posts/count-sell-ads/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://t0mk.github.io/tags/finland/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -53,13 +60,6 @@
   
   <url>
     <loc>https://t0mk.github.io/tags/volume/</loc>
-    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://t0mk.github.io/posts/count-sell-ads/</loc>
     <lastmod>2022-01-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
