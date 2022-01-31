@@ -3,6 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://t0mk.github.io/tags/count/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://t0mk.github.io/tags/finland/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://t0mk.github.io/posts/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://t0mk.github.io/tags/statistics/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://t0mk.github.io/tags/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://t0mk.github.io/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://t0mk.github.io/tags/visualization/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://t0mk.github.io/posts/count-sell-ads/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://t0mk.github.io/tags/apartments/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -11,13 +67,6 @@
   
   <url>
     <loc>https://t0mk.github.io/posts/tampere-rental-price-growth/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://t0mk.github.io/posts/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -38,13 +87,6 @@
   </url>
   
   <url>
-    <loc>https://t0mk.github.io/tags/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://t0mk.github.io/tags/tampere/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,28 +94,7 @@
   </url>
   
   <url>
-    <loc>https://t0mk.github.io/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://t0mk.github.io/tags/visualization/</loc>
-    <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://t0mk.github.io/posts/tampere-rental-apartments/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://t0mk.github.io/tags/statistics/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

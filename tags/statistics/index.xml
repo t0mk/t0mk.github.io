@@ -5,10 +5,20 @@
     <link>https://t0mk.github.io/tags/statistics/</link>
     <description>Recent content in statistics on Tomas&#39; Visualization Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://t0mk.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Volume of Real Estate for Sale in Finland 2018-2022</title>
+      <link>https://t0mk.github.io/posts/count-sell-ads/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/posts/count-sell-ads/</guid>
+      <description>In this post, I will explore and show how various features of an apartment (age, location, year built) affect rental price in the city of Tampere. I hope it will be interesting for someone who&amp;rsquo;s renting (or letting), to understand the situation better. I will not explore price development over time in this post, but I will write another one on the topic.
+Data I work with a dataset of rental ads that I scraped from Google search cache in 2018, 2019 and 2020.</description>
+    </item>
     
     <item>
       <title>Growth of Rental Prices in Tampere in the last 3 Years</title>
