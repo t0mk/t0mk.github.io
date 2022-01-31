@@ -20,7 +20,7 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="A look on the statistics of aparments for rent in Tampere from 2018 to 2020" />
+    <meta name="description" content="Change in the volume of real estate for sale in Finland between years 2018 and 2022" />
 
 <link rel="icon" type="image/png" href="/favicons/f.png">
 
@@ -40,27 +40,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
     
     <meta property="og:title" content="Volume of Real Estate for Sale in Finland 2018-2022" />
-<meta property="og:description" content="A look on the statistics of aparments for rent in Tampere from 2018 to 2020" />
+<meta property="og:description" content="Change in the volume of real estate for sale in Finland between years 2018 and 2022" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://t0mk.github.io/posts/count-sell-ads/" />
 <meta property="og:image" content="https://t0mk.github.io/img/count_2018_2022.png" />
 <meta property="article:published_time" content="2022-01-31T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-01-31T00:00:00+00:00" />
 <meta itemprop="name" content="Volume of Real Estate for Sale in Finland 2018-2022">
-<meta itemprop="description" content="A look on the statistics of aparments for rent in Tampere from 2018 to 2020">
+<meta itemprop="description" content="Change in the volume of real estate for sale in Finland between years 2018 and 2022">
 <meta itemprop="datePublished" content="2022-01-31T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-01-31T00:00:00+00:00" />
-<meta itemprop="wordCount" content="106">
+<meta itemprop="wordCount" content="361">
 <meta itemprop="image" content="https://t0mk.github.io/img/count_2018_2022.png">
 
 
 
-<meta itemprop="keywords" content="visualization,finland,count,statistics," />
+<meta itemprop="keywords" content="visualization,finland,sell,volume,statistics," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://t0mk.github.io/img/count_2018_2022.png"/>
 
 <meta name="twitter:title" content="Volume of Real Estate for Sale in Finland 2018-2022"/>
-<meta name="twitter:description" content="A look on the statistics of aparments for rent in Tampere from 2018 to 2020"/>
+<meta name="twitter:description" content="Change in the volume of real estate for sale in Finland between years 2018 and 2022"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -177,10 +177,6 @@
                     class="tag-list-count">1</span></li>
             
             
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/count/" class="tag-list-link">count</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
             <li class="tag-list-item"><a href="https://t0mk.github.io/tags/finland/" class="tag-list-link">finland</a><span
                     class="tag-list-count">1</span></li>
             
@@ -197,6 +193,10 @@
                     class="tag-list-count">2</span></li>
             
             
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/sell/" class="tag-list-link">sell</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
             <li class="tag-list-item"><a href="https://t0mk.github.io/tags/statistics/" class="tag-list-link">statistics</a><span
                     class="tag-list-count">3</span></li>
             
@@ -207,6 +207,10 @@
             
             <li class="tag-list-item"><a href="https://t0mk.github.io/tags/visualization/" class="tag-list-link">visualization</a><span
                     class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/volume/" class="tag-list-link">volume</a><span
+                    class="tag-list-count">1</span></li>
             
         </ul>
 
@@ -299,25 +303,47 @@
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/visualization/"> visualization </a>
     <a class="article-tag-link" href="/tags/finland/"> finland </a>
-    <a class="article-tag-link" href="/tags/count/"> count </a>
+    <a class="article-tag-link" href="/tags/sell/"> sell </a>
+    <a class="article-tag-link" href="/tags/volume/"> volume </a>
     <a class="article-tag-link" href="/tags/statistics/"> statistics </a>
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/count-sell-ads/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 106words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 361words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <p>In this post, I will explore and show how various features of an apartment (age, location, year built) affect rental price in the city of Tampere. I hope it will be interesting for someone who&rsquo;s renting (or letting), to understand the situation better. I will not explore price development over time in this post, but I will write another one on the topic.</p>
+      <p>This post shows how the real estate market in Finland changed in terms of volume in years 2018-2022.</p>
 <h2 id="data">Data</h2>
-<p>I work with a dataset of rental ads that I scraped from Google search cache in 2018, 2019 and 2020. It&rsquo;s by far not complete, but it&rsquo;s representative enough.</p>
-<h2 id="total-number">Total number</h2>
+<p>I work with a dataset of rental ads that I scraped from Google search cache between October 2017 and January 2022. It&rsquo;s  by far not complete, but it&rsquo;s representative enough.</p>
+<p>The displayed volume is amount of apartments, row houses, pair houses and family houses for sale. It includes all the forms of ownership. It doesn&rsquo;t include plots, garages and holiday homes. It includes both new and &ldquo;second-hand&rdquo; real estate.</p>
+<p>I am now thinking that I should explore new and resold separately. It would capture the difference in behavior of developers and regular people.</p>
+<h2 id="the-whole-finland">The whole Finland</h2>
+<p>The first plot shows the total number of all the advertised real estate for sale in Finland. We can see the peak was in summer 2018 with about 67000 items for sale. The lowest point is in the end of observation period (January 2022) with only about 38000 items for sale, that&rsquo;s about 43% drop.</p>
+<p>We can also see a yearly repeating trend. There is most real estate for sale during summer (July) and least after the beginning of the year. I guess this is somehow connected with finishing building projects. New real estate accounts for a very large portion of advertised real estate (at least in the last 8 years in Finland).</p>
+<p>We can see that the covid pandemic (April 2020 further) didn&rsquo;t really make much of a difference. Years 2019 and 2020 are very alike, just with an offset of about 20000.</p>
 <div class='bokehplot'>
 <script src="/js/count_total.js" id="f99b2822-f8fa-4ab1-94d3-26fea243a55e"></script>
 </div>
 
+<p>I then display the volume for the biggest 11 municipalities in Finland. The city volume is blue, and the whole-Finland volume is in light green on different scale, to compare the trend.</p>
+<p>Most of the cities follow the total trend, with the exception of Vantaa, where the volume of sold real estate droppedby 54% in 2 years - from ~3300 (summer 2018) to ~1500 (summer 2020). It seems that nothing was build there in 2019 and 2020.</p>
+<p>The cities are</p>
+<ul>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#helsinki">Helsinki</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#espoo">Espoo</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#tampere">Tampere</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#vantaa">Vantaa</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#oulu">Oulu</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#turku">Turku</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#jyväskylä">Jyväskylä</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#kuopio">Kuopio</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#lahti">Lahti</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#joensuu">Joensuu</a></li>
+<li><a href="https://t0mk.github.io/posts/count-sell-ads/#pori">Pori</a></li>
+</ul>
 <h2 id="helsinki">Helsinki</h2>
 <div class='bokehplot'>
 <script src="/js/count_Helsinki.js" id="72697255-60b7-4d0f-98ad-9fe99218683f"></script>

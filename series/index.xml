@@ -15,8 +15,9 @@
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://t0mk.github.io/posts/count-sell-ads/</guid>
-      <description>In this post, I will explore and show how various features of an apartment (age, location, year built) affect rental price in the city of Tampere. I hope it will be interesting for someone who&amp;rsquo;s renting (or letting), to understand the situation better. I will not explore price development over time in this post, but I will write another one on the topic.
-Data I work with a dataset of rental ads that I scraped from Google search cache in 2018, 2019 and 2020.</description>
+      <description>This post shows how the real estate market in Finland changed in terms of volume in years 2018-2022.
+Data I work with a dataset of rental ads that I scraped from Google search cache between October 2017 and January 2022. It&amp;rsquo;s by far not complete, but it&amp;rsquo;s representative enough.
+The displayed volume is amount of apartments, row houses, pair houses and family houses for sale. It includes all the forms of ownership.</description>
     </item>
     
     <item>
