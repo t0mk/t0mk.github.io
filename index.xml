@@ -16,8 +16,8 @@
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://t0mk.github.io/posts/count-sell-ads/</guid>
-      <description>This post shows how the real estate market in Finland changed in terms of volume in years 2018-2022.
-Data I work with a dataset of rental ads that I scraped from Google search cache between October 2017 and January 2022. It&amp;rsquo;s by far not complete, but it&amp;rsquo;s representative enough.
+      <description>This post shows how the residential real estate market in Finland changed in terms of volume in years 2018-2022.
+Volume Data I work with a dataset of sell ads that I scraped from Google search cache between October 2017 and January 2022. It&amp;rsquo;s by far not complete, but it&amp;rsquo;s representative enough.
 The displayed volume is amount of apartments, row houses, pair houses and family houses for sale. It includes all the forms of ownership.</description>
     </item>
     

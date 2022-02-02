@@ -132,12 +132,6 @@
                   <span class="menu-title">Archives</span>
                 </a>
             </li>
-            <li class="menu-item menu-item-tags">
-                <a href="/tags/">
-                    <i class="icon icon-tags"></i>
-                  <span class="menu-title">Tags</span>
-                </a>
-            </li>
             <li class="menu-item menu-item-aboutsite">
                 <a href="/aboutsite/">
                     <i class="icon icon-project"></i>
@@ -163,59 +157,7 @@
 
 <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
   <div class="slimContent">
-    <div class="widget">
-    <h3 class="widget-title"> Tags</h3>
-    <div class="widget-body">
-        <ul class="tag-list">
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/apartments/" class="tag-list-link">apartments</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/correlation/" class="tag-list-link">correlation</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/finland/" class="tag-list-link">finland</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/index/" class="tag-list-link">index</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/price-growth/" class="tag-list-link">price-growth</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/rental/" class="tag-list-link">rental</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/sell/" class="tag-list-link">sell</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/statistics/" class="tag-list-link">statistics</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/tampere/" class="tag-list-link">tampere</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/visualization/" class="tag-list-link">visualization</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/volume/" class="tag-list-link">volume</a><span
-                    class="tag-list-count">1</span></li>
-            
-        </ul>
-
-    </div>
-</div>
+    
 <div class="widget">
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
@@ -341,7 +283,7 @@
 <p>In order to transform the scatter plot to be more informative, I decided to bin the control variable (size), and display the median and the 0.25 and 0.75 quantiles of prices in the bin. It&rsquo;s not too hard to compute that, for apartments between 49 and 51 m², there is 1208 datapoints, the median price is 710 cheapest 25% of the apartments are below 650 (0.25 quantile) and the cheapest 75% of the apartments are below 780 (0.75 quantile). This means that the most common half of 49-51 m² apartments in Tampere are between 650 and 780 EUR per month.</p>
 <p>Let&rsquo;s take the 2D space from the scatter plot and imagine a rectangle with vertical edges on the apartment size interval bounds, and horizontal edges on the 25% and 75% percentile prices, with a dot on the median price level. for the example from previous paragraph, it would be a rectangle between points [49,650], [51,650], [51, 780] and [49, 780], with a dot on [50, 715]. If we divide all the size range into intervals, and then transform all of them into such rectangles, the plot will look like this:</p>
 <div class='bokehplot'>
-<script src="/js/g.js" id="1992a689-58ef-4383-a6ca-de828bb7f86f"></script>
+<script src="/js/g.js" id="cc39ac53-7385-4d8d-9e5b-ae4043e7268f"></script>
 </div>
 
 <p>You can hover over a rectangle and the tooltip will show parameters of the bin. I added histograms for both of the statistics (above and on the left), and I adjust intensity of the bin based on how many samples are in it. the darker the bin, the more samples it contain. I don&rsquo;t show borders of the size interval, but rather the middle value from the interval. The width of the bin/interval is not important, and can be roughly estimated from the mid-value distance.</p>
