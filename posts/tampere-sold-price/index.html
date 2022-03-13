@@ -43,22 +43,18 @@
 <meta property="og:description" content="How asking price for real estate changed from Oct 2017 to Jan 2022 in Tampere." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://t0mk.github.io/posts/tampere-sold-price/" />
-<meta property="og:image" content="https://t0mk.github.io/img/tredev.png" />
-<meta property="article:published_time" content="2022-02-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-02-17T00:00:00+00:00" />
+<meta property="article:published_time" content="2022-03-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-10T00:00:00+00:00" />
 <meta itemprop="name" content="Price of real estate for sale in Tampere 2018-2022">
 <meta itemprop="description" content="How asking price for real estate changed from Oct 2017 to Jan 2022 in Tampere.">
-<meta itemprop="datePublished" content="2022-02-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-02-17T00:00:00+00:00" />
-<meta itemprop="wordCount" content="340">
-<meta itemprop="image" content="https://t0mk.github.io/img/tredev.png">
+<meta itemprop="datePublished" content="2022-03-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-03-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="399">
 
 
 
 <meta itemprop="keywords" content="visualization,tampere,sold,price growth," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://t0mk.github.io/img/tredev.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Price of real estate for sale in Tampere 2018-2022"/>
 <meta name="twitter:description" content="How asking price for real estate changed from Oct 2017 to Jan 2022 in Tampere."/>
 
@@ -168,7 +164,7 @@
                         <a href="https://t0mk.github.io/posts/tampere-sold-price/" class="title">Price of real estate for sale in Tampere 2018-2022</a>
                     </p>
                     <p class="item-date">
-                        <time datetime="2022-02-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-02-17</time>
+                        <time datetime="2022-03-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-03-10</time>
                     </p>
                 </div>
             </li>
@@ -247,7 +243,7 @@
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
 <a href="https://t0mk.github.io/posts/tampere-sold-price/" class="article-date">
-  <time datetime="2022-02-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-02-17</time>
+  <time datetime="2022-03-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-03-10</time>
 </a>
 </span>
   
@@ -261,14 +257,14 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/tampere-sold-price/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 340words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 399words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <p>This post explores how aksing prices of real estate changed in Tampere from October 2017 to January 2022. I will look on how it changed in time, and will __ different categories, like new property, resold property, apartments, row houses and family houses.</p>
+      <p>This post explores how asking prices of real estate changed in Tampere from October 2017 to January 2022. I will look on how it changed in time, and will examine different categories, like new property, resold property, apartments, row houses and family houses.</p>
 <h1 id="data">Data</h1>
-<p>I work with a dataset consisting of real estate ads that I scraped from Google Search cache.</p>
+<p>I work with a dataset consisting of real estate ads that was scraped from Google Search cache.</p>
 <p>To study the change of the prices in time, I create a data structure with items for every day from the 4 years, where there are all the rental ads that were up some time during that day. So that if ad_1 was published only on 2018-01-04; ad_2, ad_3 and ad_4 were published on 2018-01-04 and 2018-01-05; and ad_5 only on 2018-01-05, the data structure will look as:</p>
 <table>
 <thead>
@@ -293,9 +289,9 @@
 </tbody>
 </table>
 <p>We see that a data item can be included in more than one date. In fact, it&rsquo;s included in the field for every day when it was published. I study the price day by day for the entire 4 years.</p>
-<p>One of the most important things I realized while workign on this, is that pricing of new and resold real estate is very different and worth to study separately.</p>
+<p>One of the most important things I realized while working on this, is that pricing of new and resold real estate is very different and worth to study separately.</p>
 <h1 id="number-of-new-and-resold-property-ads">Number of new and resold property ads</h1>
-<p>Here we can see the number of real estate selling ads for Tampere per day. New real estate is plotted in blue and resold in green.</p>
+<p>Here we can see the volume of real estate selling ads for Tampere per day. New real estate is plotted in blue and resold in green.</p>
 <div class='bokehplot'>
 <script src="/js/tre_count_old_new.js" id="65622138-d56b-4dc1-b1d3-10f2f78cbbb8"></script>
 </div>
@@ -308,11 +304,14 @@
 </div>
 
 <p>We can see that the price of resold (not-new) property went 20% down in 2019, probably because there was so much new housing build that year. The price of resold property only returned to 2018 level in the beginning of 2022.</p>
-<h2 id="price-categories">Price categories</h2>
+<h2 id="price-development-of-apartments-vs-row-vs-family-houses">Price development of apartments vs row vs family houses</h2>
 <div class='bokehplot'>
 <script src="/js/tre_sell_price_growth_types.js" id="88fa8fb2-da89-4f88-b558-a3faa48088fa"></script>
 </div>
 
+<p>We can see that the big price drop mostly concerned apartments. The housing boom caused pushed the price of resold apartment down by 25%. Price of row houses and family houses didn&rsquo;t change much until 2021, when it went about 20% up.</p>
+<h2 id="heatmap-of-square-meter-price-in-tampere">Heatmap of square-meter price in Tampere</h2>
+<p>The map is <a href="/maps/tamsoldapt.html">here</a></p>
 
     </div>
     <div class="article-footer">
