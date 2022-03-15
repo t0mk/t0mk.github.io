@@ -15,9 +15,9 @@
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://t0mk.github.io/posts/tampere-sold-price/</guid>
-      <description>This post explores how asking prices of real estate changed in Tampere from October 2017 to January 2022. I will look on how it changed in time, and will examine different categories, like new property, resold property, apartments, row houses and family houses.
-Data I work with a dataset consisting of real estate ads that was scraped from Google Search cache.
-To study the change of the prices in time, I create a data structure with items for every day from the 4 years, where there are all the rental ads that were up some time during that day.</description>
+      <description>This post explores asking prices of real estate in Tampere between October 2017 and January 2022. I will look on how it changed in time, and will examine different categories, like new property, resold property, apartments, row houses and family houses, and I will summarize it on map, like this:
+If you aren&amp;rsquo;t interested in anything besides the price map, you can see it here.
+Data I work with a dataset consisting of real estate ads that was scraped from Google Search cache.</description>
     </item>
     
     <item>

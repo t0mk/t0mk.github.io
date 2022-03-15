@@ -43,18 +43,22 @@
 <meta property="og:description" content="How asking price for real estate changed from Oct 2017 to Jan 2022 in Tampere." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://t0mk.github.io/posts/tampere-sold-price/" />
+<meta property="og:image" content="https://t0mk.github.io/img/tamsoldapt.apng" />
 <meta property="article:published_time" content="2022-03-10T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-03-10T00:00:00+00:00" />
 <meta itemprop="name" content="Price of real estate for sale in Tampere 2018-2022">
 <meta itemprop="description" content="How asking price for real estate changed from Oct 2017 to Jan 2022 in Tampere.">
 <meta itemprop="datePublished" content="2022-03-10T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-03-10T00:00:00+00:00" />
-<meta itemprop="wordCount" content="399">
+<meta itemprop="wordCount" content="679">
+<meta itemprop="image" content="https://t0mk.github.io/img/tamsoldapt.apng">
 
 
 
 <meta itemprop="keywords" content="visualization,tampere,sold,price growth," />
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://t0mk.github.io/img/tamsoldapt.apng"/>
+
 <meta name="twitter:title" content="Price of real estate for sale in Tampere 2018-2022"/>
 <meta name="twitter:description" content="How asking price for real estate changed from Oct 2017 to Jan 2022 in Tampere."/>
 
@@ -257,12 +261,14 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/tampere-sold-price/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 399words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 679words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <p>This post explores how asking prices of real estate changed in Tampere from October 2017 to January 2022. I will look on how it changed in time, and will examine different categories, like new property, resold property, apartments, row houses and family houses.</p>
+      <p>This post explores asking prices of real estate in Tampere between October 2017 and January 2022. I will look on how it changed in time, and will examine different categories, like new property, resold property, apartments, row houses and family houses, and I will summarize it on map, like this:</p>
+<p><img src="/img/tamsoldapt.apng" alt="alt"></p>
+<p>If you aren&rsquo;t interested in anything besides the price map, you can see it <a href="/maps/tamsoldapt.html">here</a>.</p>
 <h1 id="data">Data</h1>
 <p>I work with a dataset consisting of real estate ads that was scraped from Google Search cache.</p>
 <p>To study the change of the prices in time, I create a data structure with items for every day from the 4 years, where there are all the rental ads that were up some time during that day. So that if ad_1 was published only on 2018-01-04; ad_2, ad_3 and ad_4 were published on 2018-01-04 and 2018-01-05; and ad_5 only on 2018-01-05, the data structure will look as:</p>
@@ -291,27 +297,44 @@
 <p>We see that a data item can be included in more than one date. In fact, it&rsquo;s included in the field for every day when it was published. I study the price day by day for the entire 4 years.</p>
 <p>One of the most important things I realized while working on this, is that pricing of new and resold real estate is very different and worth to study separately.</p>
 <h1 id="number-of-new-and-resold-property-ads">Number of new and resold property ads</h1>
-<p>Here we can see the volume of real estate selling ads for Tampere per day. New real estate is plotted in blue and resold in green.</p>
+<p>Here we can see the volume of real estate selling ads for Tampere per day. New real estate is plotted in blue and resold in green. There is some data missing from October 2019 to Feburary 2020, my tooling went off unnoticed.</p>
 <div class='bokehplot'>
-<script src="/js/tre_count_old_new.js" id="65622138-d56b-4dc1-b1d3-10f2f78cbbb8"></script>
+<script src="/js/tre_count_old_new.js" id="7cb02c1c-af5e-4fe6-a5d5-d1570bcce515"></script>
 </div>
 
-<p>There was a lot of new housing coming to market in 2019, and people were selling out less and less since mid 2018.</p>
+<p>There was a lot of new housing coming to market in 2018 and 2019. In both categories, there is less and less real estate for sale since mid-2019.</p>
 <h1 id="selling-price-growth">Selling price growth</h1>
 <p>Let&rsquo;s first take all of the days, count median m²-price, and then plot it. New real estate is plotted in blue and resold in green.</p>
 <div class='bokehplot'>
-<script src="/js/tre_price_growth_old_new.js" id="e41995af-6e9c-4032-a7d5-b23c2f4ceebd"></script>
+<script src="/js/tre_price_growth_old_new.js" id="fcab71a5-86c7-4116-8136-c12691867c8d"></script>
 </div>
 
-<p>We can see that the price of resold (not-new) property went 20% down in 2019, probably because there was so much new housing build that year. The price of resold property only returned to 2018 level in the beginning of 2022.</p>
-<h2 id="price-development-of-apartments-vs-row-vs-family-houses">Price development of apartments vs row vs family houses</h2>
+<p>Between 2018 and 2022, median price of new real estate grew my 24% (~4600 to ~5700 per m2) and median price of resold real estate grew by 48% (~2500 to ~3700 per m2). As there was a lot of new housing coming to market in the last 4 years, it also got resold (within the measured time period), and that might explain so big price growth for the resold property.</p>
+<h1 id="price-development-of-apartments-vs-row-vs-family-houses-resold-property">Price development of apartments vs row vs family houses (resold property)</h1>
+<p>Here I populate each day with the listed ads, and further split them to 3 categories by type:</p>
+<ul>
+<li>Kerrostalo and Luhtitalo</li>
+<li>Rivitalo and Paritalo</li>
+<li>Omakotitalo</li>
+</ul>
+<p>I only explore the categories in the resold property. The new items seem to be statistically different and don&rsquo;t capture behavior of individuals.</p>
+<p>I merge the row and pair houses because I think they are very similar in characteristics and not worth to look at separately. Same for apartments in blocks and in loft houses.</p>
 <div class='bokehplot'>
-<script src="/js/tre_sell_price_growth_types.js" id="88fa8fb2-da89-4f88-b558-a3faa48088fa"></script>
+<script src="/js/tre_sell_price_growth_types.js" id="c941c5bb-c050-47ec-bd86-af712cfe707f"></script>
 </div>
 
-<p>We can see that the big price drop mostly concerned apartments. The housing boom caused pushed the price of resold apartment down by 25%. Price of row houses and family houses didn&rsquo;t change much until 2021, when it went about 20% up.</p>
-<h2 id="heatmap-of-square-meter-price-in-tampere">Heatmap of square-meter price in Tampere</h2>
-<p>The map is <a href="/maps/tamsoldapt.html">here</a></p>
+<p>We can see that the apartment prices rose fastest. Family and row houses stayed pretty much the same until December 2020 when the price of family houses in Tampere started to rise. In the end of 2021, also the price of row houses jumped up.</p>
+<h1 id="price-map-of-tampere">Price map of Tampere</h1>
+<p>To present asking  the data by location, I created following visualization. Area of Tampere is arbitrarily split to hexagonal cells. Ads are grouped by cell, and several statistics are computed per cell</p>
+<ul>
+<li>median price of ads in the cell, in €/m²</li>
+<li>number of ads in the cell</li>
+<li>average of year built in the cell</li>
+<li>slope and intercept of least-squares regression line of propery area vs property price</li>
+</ul>
+<p>The cells are then colored based on selected metric.</p>
+<p>Double-click on a cell will open a detailed view which lists ads posted in the last 4 years. It also show a scatter plot of property are vs property price, and the regression line. Point on the scatter plot are colored based on how recently the ad was posted.</p>
+<p>The map is <a href="/maps/tamsoldapt.html">here</a>.</p>
 
     </div>
     <div class="article-footer">
