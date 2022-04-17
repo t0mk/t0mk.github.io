@@ -268,7 +268,7 @@
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <p>This post explores asking prices of real estate in Tampere between October 2017 and January 2022. I will look on how it changed in time, and will examine different categories, like new property, resold property, apartments, row houses and family houses, and I will summarize it on map, like this:</p>
 <p><img src="/img/tamsoldapt.apng" alt="alt"></p>
-<p>If you aren&rsquo;t interested in anything besides the price map, you can see it <a href="/maps/tamsoldapt.html">here</a>.</p>
+<p>If you aren&rsquo;t interested in anything besides the price map, you can see it <a href="https://storage.googleapis.com/t0mkstat/preownedapt/Tampere.html">here</a>.</p>
 <h1 id="data">Data</h1>
 <p>I work with a dataset consisting of real estate ads that was scraped from Google Search cache.</p>
 <p>To study the change of the prices in time, I create a data structure with items for every day from the 4 years, where there are all the rental ads that were up some time during that day. So that if ad_1 was published only on 2018-01-04; ad_2, ad_3 and ad_4 were published on 2018-01-04 and 2018-01-05; and ad_5 only on 2018-01-05, the data structure will look as:</p>
@@ -320,7 +320,7 @@
 <p>I only explore the categories in the resold property. The new items seem to be statistically different and don&rsquo;t capture behavior of individuals.</p>
 <p>I merge the row and pair houses because I think they are very similar in characteristics and not worth to look at separately. Same for apartments in blocks and in loft houses.</p>
 <div class='bokehplot'>
-<script src="/js/tre_sell_price_growth_types.js" id="c941c5bb-c050-47ec-bd86-af712cfe707f"></script>
+<script src="/js/tre_sell_price_growth_types.js" id="634822a5-901b-4b49-8fea-dcad8d8aebaa"></script>
 </div>
 
 <p>We can see that the apartment prices rose fastest. Family and row houses stayed pretty much the same until December 2020 when the price of family houses in Tampere started to rise. In the end of 2021, also the price of row houses jumped up.</p>
@@ -334,7 +334,7 @@
 </ul>
 <p>The cells are then colored based on selected metric.</p>
 <p>Double-click on a cell will open a detailed view which lists ads posted in the last 4 years. It also show a scatter plot of property are vs property price, and the regression line. Point on the scatter plot are colored based on how recently the ad was posted.</p>
-<p>The map is <a href="/maps/tamsoldapt.html">here</a>.</p>
+<p>The map is <a href="https://storage.googleapis.com/t0mkstat/preownedapt/Tampere.html">here</a>.</p>
 
     </div>
     <div class="article-footer">
