@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Growth of Rental Prices in Tampere in the last 3 Years - Tomas&#39; Visualization Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="How rental prices have changed from Jan 2018 to Dec 2020 in Tampere for different types of apartments." />
+
+<link rel="icon" type="image/png" href="/favicons/f.png">
+
+
+
+
+
+
+    
+    <meta name="generator" content="Hugo 0.115.3 with theme pure" />
+    <title>Growth of Rental Prices in Tampere in the last 3 Years - Tomas&#39; Visualization Blog</title>
+    
+    
+    <link rel="stylesheet" href="https://t0mk.github.io/css/style.min.67a57a189656df46d6ecf6ce5d60cc4ef22577eb4a1270208ad0a5d07d1d93f0.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    
+    <meta property="og:title" content="Growth of Rental Prices in Tampere in the last 3 Years" />
+<meta property="og:description" content="How rental prices have changed from Jan 2018 to Dec 2020 in Tampere for different types of apartments." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://t0mk.github.io/posts/tampere-rental-price-growth/" /><meta property="og:image" content="https://t0mk.github.io/img/tredev.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-02-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-17T00:00:00+00:00" />
+<meta itemprop="name" content="Growth of Rental Prices in Tampere in the last 3 Years">
+<meta itemprop="description" content="How rental prices have changed from Jan 2018 to Dec 2020 in Tampere for different types of apartments."><meta itemprop="datePublished" content="2021-02-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-02-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1374"><meta itemprop="image" content="https://t0mk.github.io/img/tredev.png">
+<meta itemprop="keywords" content="visualization,tampere,rental,apartments,price growth," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://t0mk.github.io/img/tredev.png"/>
+
+<meta name="twitter:title" content="Growth of Rental Prices in Tampere in the last 3 Years"/>
+<meta name="twitter:description" content="How rental prices have changed from Jan 2018 to Dec 2020 in Tampere for different types of apartments."/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/t0mk" target="_blank">
+            <img class="img-circle img-rotate" src="https://t0mk.github.io/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Tomáš Karásek</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">Relevant Data Visualizations</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-aboutsite">
+                <a href="/aboutsite/">
+                    <i class="icon icon-project"></i>
+                  <span class="menu-title">About This Site</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About Me</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-github">
+                <a href="/github/">
+                    <i class="icon icon-github"></i>
+                  <span class="menu-title">Github Feed</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/tampere-sold-price/" class="title">Price of real estate for sale in Tampere 2018-2022</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2022-03-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-03-10</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/count-sell-ads/" class="title">Change in the Volume of Real Estate for Sale in Finland from 2018 to 2022</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2022-01-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-01-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/tampere-rental-price-growth/" class="title">Growth of Rental Prices in Tampere in the last 3 Years</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-02-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-02-17</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/tampere-rental-apartments/" class="title">Price of Rental Apartments in Tampere</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-01-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/rich-boxplot/" class="title">Rich Boxplot</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-12-27</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse in" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Table of Contents</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/tampere-rental-price-growth/"
+    >Growth of Rental Prices in Tampere in the last 3 Years</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://t0mk.github.io/posts/tampere-rental-price-growth/" class="article-date">
+  <time datetime="2021-02-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-02-17</time>
+</a>
+</span>
+  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/visualization/"> visualization </a>
+    <a class="article-tag-link" href="/tags/tampere/"> tampere </a>
+    <a class="article-tag-link" href="/tags/rental/"> rental </a>
+    <a class="article-tag-link" href="/tags/apartments/"> apartments </a>
+    <a class="article-tag-link" href="/tags/price-growth/"> price growth </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/tampere-rental-price-growth/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1374words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 7minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>In cities, the price of real estate is growing since ever. The rental prices should follow the selling prices. In this post I explore how the rental prices of apartments in Tamere grew in the last 3 years (2018, 2019, 2020), and I find subsets of the rental items, which show different rate of growth, e.g. expensive apartments vs cheap apartments, small apartments vs large apartments, apartments in different neighborhoods.</p>
+<h1 id="data">Data</h1>
+<p>I work with the same dataset as in <a href="https://t0mk.github.io/posts/tampere-rental-apartments/#data">the post about rental prices in Tampere</a>. I <a href="https://t0mk.github.io/posts/tampere-rental-apartments/#outlier-removal">remove outliers in the same manner</a>. This time I only consider apartments within 8.5 km from the center of Tampere.</p>
+<p>I don&rsquo;t do any deduplication here. There will more ads for one apartment in the dataset, but it&rsquo;s OK, because they will be counted only for the days when they were published.</p>
+<p>Because I want to see price development of existing real estate, I need to remove all the ads for apartments built after the beginning of the measurement - I drop all items with year-built after the end of 2017. There is about 30000 items in the dataset - 30000 rental ads for apartments in Tampere.</p>
+<p>To study the change of the prices in time, I create a data structure with items for every day from the 3 years, where there are all the rental ads that were up some time during that day. So that if ad_1 was published only on 2018-01-04; ad_2, ad_3 and ad_4 were published on 2018-01-04 and 2018-01-05; and ad_5 only on 2018-01-05, the data structure will look as:</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>published ads</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018-01-04</td>
+<td>ad_1, ad_2, ad_3, ad_4</td>
+</tr>
+<tr>
+<td>2018-01-05</td>
+<td>ad_2, ad_3, ad_4, ad_5</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>We see that a data item can be included in more than one date. In fact, it&rsquo;s included in the field for every day when it was published. I study the price day by day for the entire 3 years.</p>
+<h1 id="rent-growth">Rent growth</h1>
+<p>Let&rsquo;s first take all of the days, count median <a href="https://t0mk.github.io/posts/tampere-rental-apartments/##the-metric---mmonth">m²-price</a> for every day, and then plot it (blue). I also plot the number of rental ads published in particular day (green).</p>
+<div class='bokehplot'>
+<script src="/js/tredev_basic.js" id="4e690271-92a8-4c84-897d-5a042c89ae23"></script>
+</div>
+
+<p>We can see the median apartment rental price in a day in blue, and number of ads in a day in green. Both are actually 30-day rolling averages, just so the plot looks better. We can see that the market of rental apartments is regularly at its lowest in September, after the summer holidays, when school and university starts.</p>
+<p>The median price oscillates up and down but it obviously follows an upward trend. It would be good to measure the rate of the growth. I decided to fit prices in all the days of the 3 years into a linear function - essentially a line that has some vertical offset (mean price in the beginning of the measurements), and a constant rate of change over time - i.e. how much the rent increases per day or year &ldquo;on average&rdquo;. The fitted (dashed) line starts at 13.3 in the beginning of 2018, and ends at 14.3 in the end of 2020. The measured rate of change of the fitted line is then 1.03 €/m² in the 3 years, that&rsquo;s 7.8 % growth.</p>
+<p>To illustrate, 7.8% growth means that if, in January 2018, an average 50 m² apartment in Tampere was 50*13.3 = 665 €/month, in December 2020, it is expected to be 50*14.3 = 715 €/month.</p>
+<p>To understand the situation beter, we need to observe the price growth for various apartment categories. Following sections will categorize rental items based on features, and identify categories with different rate of growth.</p>
+<h2 id="price-categories">Price categories</h2>
+<p>I wonder if the rent has risen more for cheap or for expensive apartments. In order to compare, I split the ads into price categories and measure medians of the categories.</p>
+<p>I first divide the apartments to 4 same-size price categories. For each day, I count median for each of these groups - there will be the quarter of the cheapest apartments (<code>cheapest</code>), the quarter below median (<code>cheap</code>), quarter above median (<code>expensive</code>), and quarter of the most expensive apartments (<code>most expensive</code>).</p>
+<p>I then display change of the 4 categories over the course of the measured 3 years.</p>
+<div class='bokehplot'>
+<script src="/js/tredev_price_cats.js" id="64daef9f-2984-4daf-92c2-c140a1184915"></script>
+</div>
+
+<p>We see that the rent growth is most steep for the expensive apartments (quarter above median) - 9.8% in 3 years. Rental price of the cheapest third grew only by 5.4%.</p>
+<h2 id="age-of-the-apartment">Age of the apartment</h2>
+<p>The age of aparment is an <a href="https://t0mk.github.io/posts/tampere-rental-apartments/#year-built">important factor of rental price</a>. Let&rsquo;s explore whether the rent in newer apartments grew faster than rent in old apartments. I divide the data to 4 age groups by year built:</p>
+<ul>
+<li>built between 1910 and 1963</li>
+<li>built between 1963 and 1986</li>
+<li>built between 1986 and 2009</li>
+<li>built between 2009 and 2017</li>
+</ul>
+<p>Let&rsquo;s first see how were apartments of different age proportionally published in the three years:</p>
+<div class='bokehplot'>
+<script src="/js/tredev_period_stack.js" id="fb2f92e3-f1ac-4099-9f2d-dcfdff95257b"></script>
+</div>
+
+<p>We see that a lot of cold-war era (1963-1986) apartments was put to the market in the first half of 2020. I wonder if this is connected to Covid-19.</p>
+<p>But let&rsquo;s see how the rent per m² developed for apartments in different age groups:</p>
+<div class='bokehplot'>
+<script src="/js/tredev_period_cats.js" id="f490057f-8165-474c-8465-01599a164467"></script>
+</div>
+
+<p>Rent grew fastest for the pre-1963 apartments (7.3 % in 3 years), and then for the cold-war apartments (6.7 % in 3 years). For apatrments built between 1986 and 2009, rent grew only by 3.7 %.</p>
+<h2 id="neighborhood">Neighborhood</h2>
+<p>Let&rsquo;s explore how the rent developed in various locations in Tampere. I divide the ads to <a href="https://t0mk.github.io/posts/tampere-rental-apartments/#neighborhood">neighborhoods by postal areas</a>. The amount of ads per neighborhood varies in time. To understand the supply of rentals from neighborhood over time, following stack plot shows amount of ads in 10 most rental-popular neighborhoods.</p>
+<div class='bokehplot'>
+<script src="/js/tredev_loc_stack.js" id="6ef70860-718b-4b8a-8e33-10cd65e05cd7"></script>
+</div>
+
+<p>We can see that the most rental ads are from Hervanta, probably because it&rsquo;s quite populous and the University is there. There was a sudden influx of rentals in Kaleva in August 2019 and in Itä-Amuri-Tammerkoski in September 2020. I think these are old apartment buildings that went through complete renovation, whole building at once. In the <a href="https://t0mk.github.io/posts/tampere-rental-price-growth/#age-of-the-apartment">age distribuition plot above</a>, we can see that those 2 spikes are pre-1963 apartments.</p>
+<p>It&rsquo;s difficult to display price development in all the neighborhoods in a readable manner. Here is the top 5 most rental-popular areas in a single plot.</p>
+<div class='bokehplot'>
+<script src="/js/tredev_loc_5.js" id="7a90c2c8-5539-4baa-8774-763fc6204483"></script>
+</div>
+
+<p>We can see that the rents grew fastest in Kaukajärvi and Kaleva. In Tampere-Keskus the rental prices grew very little in comparison.</p>
+<p>There were actually 16 areas of Tampere worth showing, and I realized it&rsquo;s not possible to put them together in one line plot. It&rsquo;s better to summarize the area rent growth in a table. The following table shows regressed price in January 2018, regressed price in December 2020, and the percentual growth. You can click on the column headers to sort by the criterion.</p>
+<div class='bokehplot'>
+<script src="/js/tredev_loc_tab.js" id="abe25773-93c1-4e90-8f6f-06994f3a3ce2"></script>
+</div>
+
+<p>I also show the percentual rental price growth on a map. The more blue, the faster the rental price grew in 2018, 2019 and 2020.</p>
+<div class='bokehplot'>
+<script src="/js/tredev_choro_proc.js" id="3cb7959c-9798-4185-a650-e56d101f2203"></script>
+</div>
+
+<p>By looking at the map, it seems that the rent grow a lot in Kaleva, Kaukajärvi and Luoteis-Tampere. In the center, except for the mid-southern part (Tampere Keskus Läntinen), rental price only by 1-4% in 3 years.</p>
+<p>In Tesoma there was a lot of new development in the last 3 years, and I think that&rsquo;s the reason for the stagnation of the rent lever in older housing.</p>
+<h2 id="area">Area</h2>
+<p>Another criterion for apartment category is the size (area). I divide the apartments to 4 groups of the same size. I.e. in the 3 years of rental ads in Tampere, there was a similar amount of apartments in these 4 area categories:</p>
+<ul>
+<li>0-36 m²</li>
+<li>36-49 m²</li>
+<li>49-60 m²</li>
+<li>60-160 m²</li>
+</ul>
+<p>Here is the plot of the rental price development in time:</p>
+<div class='bokehplot'>
+<script src="/js/tredev_area_cats.js" id="28ad7eac-d02b-4668-a547-c40a2f0b2603"></script>
+</div>
+
+<p>We can see that the price growth is most significant in the second smallest group (just below average area). Rents grew slowest for aparments above 49 and below 60 m².</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Overall, the rent increase over the 3 years (2018-2020) in Tampere was about 7.8%.</p>
+<p>Rent grew faster for</p>
+<ul>
+<li>slightly-above-average-priced apartents</li>
+<li>old (pre-1963) apartments, and less so for pre-1986 apartments</li>
+<li>Kaukajärvi, Luoteis-Tampere, Kaleva</li>
+<li>apartments sized 36-49 m², and smaller too</li>
+</ul>
+<p>Rent grew slower for</p>
+<ul>
+<li>very cheap apartments</li>
+<li>apartments built in 90s and 00s</li>
+<li>Takahuhti, Tesoma and overall the center of Tamere except for Tampere Keskus Läntinen</li>
+<li>apartments larger than 49 m²</li>
+</ul>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://t0mk.github.io/posts/tampere-rental-apartments/" title="Price of Rental Apartments in Tampere"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://t0mk.github.io/posts/count-sell-ads/"
+                    title="Change in the Volume of Real Estate for Sale in Finland from 2018 to 2022"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn" data-toggle="collapse" href="#collapseToc" aria-expanded="true"
+                    title="Table of Contents" role="button">
+                    <span>[&nbsp;</span><span>Table of Contents</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="facebook,twitter"
+                data-mobile-sites="facebook,twitter"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/t0mk" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://t0mk.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2025
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://t0mk.github.io/js/application.min.c5e6b8b654ecc4c534fcefb82aae117cbc13cf92eb4019d05702ee813b91f1ef.js"></script>
+<script src="https://t0mk.github.io/js/plugin.min.738a460bf4317fac61717f1bca393e53d00973db9754d9f0a81c7312d5874840.js"></script>
+
+
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/t0mk.github.io',
+            CONTENT_URL: 'https:\/\/t0mk.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://t0mk.github.io/js/insight.min.716b0c6a00b68ccc31a2b65345f3412f4246ffa94a90f8e25d525528b4504f9937880692bbe619023233caba5d0a17ebe23d7cfb57cd3a88f23ea337ad5e4d00.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+        collapseDepth: 3,
+    });
+</script>
+
+
+
+  </body>
+</html>

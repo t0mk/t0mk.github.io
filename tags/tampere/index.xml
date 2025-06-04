@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tampere on Tomas&#39; Visualization Blog</title>
+    <link>https://t0mk.github.io/tags/tampere/</link>
+    <description>Recent content in tampere on Tomas&#39; Visualization Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://t0mk.github.io/tags/tampere/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Change in the Volume of Real Estate for Sale in Finland from 2018 to 2022</title>
+      <link>https://t0mk.github.io/posts/count-sell-ads/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/posts/count-sell-ads/</guid>
+      <description>This post shows how the real estate market in Finland changed in terms of volume in years 2018-2022.
+Data I work with a dataset of rental ads that I scraped from Google search cache between October 2017 and January 2022. It&amp;rsquo;s by far not complete, but it&amp;rsquo;s representative enough.
+The displayed volume is amount of apartments, row houses, pair houses and family houses for sale. It includes all the forms of ownership.</description>
+    </item>
+    
+    <item>
+      <title>Growth of Rental Prices in Tampere in the last 3 Years</title>
+      <link>https://t0mk.github.io/posts/tampere-rental-price-growth/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/posts/tampere-rental-price-growth/</guid>
+      <description>In cities, the price of real estate is growing since ever. The rental prices should follow the selling prices. In this post I explore how the rental prices of apartments in Tamere grew in the last 3 years (2018, 2019, 2020), and I find subsets of the rental items, which show different rate of growth, e.g. expensive apartments vs cheap apartments, small apartments vs large apartments, apartments in different neighborhoods.</description>
+    </item>
+    
+    <item>
+      <title>Price of Rental Apartments in Tampere</title>
+      <link>https://t0mk.github.io/posts/tampere-rental-apartments/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/posts/tampere-rental-apartments/</guid>
+      <description>In this post, I will explore and show how various features of an apartment (age, location, year built) affect rental price in the city of Tampere. I hope it will be interesting for someone who&amp;rsquo;s renting (or letting), to understand the situation better. I will not explore price development over time in this post, but I will write another one on the topic.
+Data I work with a dataset of rental ads that I scraped from Google search cache in 2018, 2019 and 2020.</description>
+    </item>
+    
+    <item>
+      <title>Rich Boxplot</title>
+      <link>https://t0mk.github.io/posts/rich-boxplot/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/posts/rich-boxplot/</guid>
+      <description>It&amp;rsquo;s often useful to visually understand how one statistic relates to another. For example, to see how rental apartment area affects its monthly price. The first visualization that would come to my mind is scatter plot, and I argue that scatter plot is not descriptive enough to offer good understanding of the simple case of two 1d statistics. I propose a rich boxplot visualization that gives better overview of the correlation to the reader.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://t0mk.github.io/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/about/</guid>
+      <description>I am a freelance IT professional, and besides visualization I focus on Golang development and infrastructure automation (DevOps?).
+In past I worked in Google in Dublin, in CERN in Geneva, I did contract work for Basho, the makers of Riak, and Rovio, the company behind the Angry Birds. I wrote Ansible modules for the Packet host (acquired by Equinix in 2020 and rebranded as Equinix Metal). I am maintaining Equinix Metal Terraform Provider and a couple of other intrastructure-related Golang-based tools.</description>
+    </item>
+    
+    <item>
+      <title>About This Site</title>
+      <link>https://t0mk.github.io/aboutsite/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/aboutsite/</guid>
+      <description>I will try to publish interesting data visualizations on this site.
+In 2017 I was buying my first apartment and, even though it was the biggest purchase of my life, I realized I have very weak overview of the real estate market. Thinking about it in this way was very scary. I imagine many people go through this process, and end up relying on tribal knowlegde of the real estate agents and intuition.</description>
+    </item>
+    
+    <item>
+      <title>My Github Feed</title>
+      <link>https://t0mk.github.io/github/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://t0mk.github.io/github/</guid>
+      <description> </description>
+    </item>
+    
+  </channel>
+</rss>

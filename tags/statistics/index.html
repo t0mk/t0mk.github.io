@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Tomas&#39; Visualization Blog</title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    
+
+<link rel="icon" type="image/png" href="/favicons/f.png">
+
+
+
+
+
+
+    
+    <meta name="generator" content="Hugo 0.79.1 with theme pure" />
+    <title>Tomas&#39; Visualization Blog</title>
+    
+    <link rel="alternate" type="application/rss+xml" href="https://t0mk.github.io/tags/statistics/index.xml" title="Tomas' Visualization Blog" />
+    
+    <link rel="stylesheet" href="https://t0mk.github.io/css/style.min.11f9eee36cb859ea6ba58fbf3d9aad5e58d0964cdc6ca49b275779acd8136758.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    
+    <meta property="og:title" content="statistics" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://t0mk.github.io/tags/statistics/" />
+<meta property="og:updated_time" content="2022-01-31T00:00:00+00:00" />
+<meta itemprop="name" content="statistics">
+<meta itemprop="description" content="">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="statistics"/>
+<meta name="twitter:description" content=""/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/t0mk" target="_blank">
+            <img class="img-circle img-rotate" src="https://t0mk.github.io/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Tomáš Karásek</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">Relevant Data Visualizations</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-aboutsite">
+                <a href="/aboutsite/">
+                    <i class="icon icon-project"></i>
+                  <span class="menu-title">About This Site</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About Me</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-github">
+                <a href="/github/">
+                    <i class="icon icon-github"></i>
+                  <span class="menu-title">Github Feed</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/apartments/" class="tag-list-link">apartments</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/correlation/" class="tag-list-link">correlation</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/finland/" class="tag-list-link">finland</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/index/" class="tag-list-link">index</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/price-growth/" class="tag-list-link">price-growth</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/rental/" class="tag-list-link">rental</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/sell/" class="tag-list-link">sell</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/statistics/" class="tag-list-link">statistics</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/tampere/" class="tag-list-link">tampere</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/visualization/" class="tag-list-link">visualization</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://t0mk.github.io/tags/volume/" class="tag-list-link">volume</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/count-sell-ads/" class="title">Change in the Volume of Real Estate for Sale in Finland from 2018 to 2022</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2022-01-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2022-01-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/tampere-rental-price-growth/" class="title">Growth of Rental Prices in Tampere in the last 3 Years</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-02-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-02-17</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/tampere-rental-apartments/" class="title">Price of Rental Apartments in Tampere</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2021-01-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://t0mk.github.io/posts/rich-boxplot/" class="title">Rich Boxplot</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-12-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-12-27</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<main class="main" role="main">
+    <article class="content article article-tags post-type-list" itemscope="">
+        <header class="article-header">
+            <h1 itemprop="name" class="hidden-xs">statistics</h1>
+            <p class="text-muted hidden-xs">Total 11 tags</p>
+            <nav role="navigation" id="nav-main" class="okayNav">
+                <ul>
+                    <li><a href="https://t0mk.github.io/tags">All</a></li>
+                    <li><a href="https://t0mk.github.io/tags/apartments/">apartments</a></li>
+                    <li><a href="https://t0mk.github.io/tags/correlation/">correlation</a></li>
+                    <li><a href="https://t0mk.github.io/tags/finland/">finland</a></li>
+                    <li><a href="https://t0mk.github.io/tags/index/">index</a></li>
+                    <li><a href="https://t0mk.github.io/tags/price-growth/">price growth</a></li>
+                    <li><a href="https://t0mk.github.io/tags/rental/">rental</a></li>
+                    <li><a href="https://t0mk.github.io/tags/sell/">sell</a></li>
+                    <li><a href="https://t0mk.github.io/tags/statistics/">statistics</a></li>
+                    <li><a href="https://t0mk.github.io/tags/tampere/">tampere</a></li>
+                    <li><a href="https://t0mk.github.io/tags/visualization/">visualization</a></li>
+                    <li><a href="https://t0mk.github.io/tags/volume/">volume</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="article-body">
+            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="panel-body">
+        <div class="article-meta">
+            <time datetime="2022-01-31 00:00:00 &#43;0000 UTC"
+                itemprop="datePublished">2022-01-31</time>
+        </div>
+        <h3 class="article-title" itemprop="name">
+            <a class="article-link" href="https://t0mk.github.io/posts/count-sell-ads/">Change in the Volume of Real Estate for Sale in Finland from 2018 to 2022</a>
+        </h3>
+    </div>
+    <div class="panel-footer">
+        <a href="https://t0mk.github.io/tags/visualization" class="label label-default mb">visualization</a>
+        <a href="https://t0mk.github.io/tags/finland" class="label label-default mb">finland</a>
+        <a href="https://t0mk.github.io/tags/sell" class="label label-default mb">sell</a>
+        <span class="label label-default mb">···</span>
+    </div>
+</article>
+            </div>
+            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="panel-body">
+        <div class="article-meta">
+            <time datetime="2021-01-01 00:00:00 &#43;0000 UTC"
+                itemprop="datePublished">2021-01-01</time>
+        </div>
+        <h3 class="article-title" itemprop="name">
+            <a class="article-link" href="https://t0mk.github.io/posts/tampere-rental-apartments/">Price of Rental Apartments in Tampere</a>
+        </h3>
+    </div>
+    <div class="panel-footer">
+        <a href="https://t0mk.github.io/tags/visualization" class="label label-default mb">visualization</a>
+        <a href="https://t0mk.github.io/tags/tampere" class="label label-default mb">tampere</a>
+        <a href="https://t0mk.github.io/tags/rental" class="label label-default mb">rental</a>
+        <span class="label label-default mb">···</span>
+    </div>
+</article>
+            </div>
+            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="panel-body">
+        <div class="article-meta">
+            <time datetime="2020-12-27 00:00:00 &#43;0000 UTC"
+                itemprop="datePublished">2020-12-27</time>
+        </div>
+        <h3 class="article-title" itemprop="name">
+            <a class="article-link" href="https://t0mk.github.io/posts/rich-boxplot/">Rich Boxplot</a>
+        </h3>
+    </div>
+    <div class="panel-footer">
+        <a href="https://t0mk.github.io/tags/visualization" class="label label-default mb">visualization</a>
+        <a href="https://t0mk.github.io/tags/statistics" class="label label-default mb">statistics</a>
+        <a href="https://t0mk.github.io/tags/correlation" class="label label-default mb">correlation</a>
+    </div>
+</article>
+            </div>
+        </div>
+    </article>
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/t0mk" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://t0mk.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2022
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://t0mk.github.io/js/application.min.09c3686655e74bfebb6d3855bc97dd4eda2bc7e2de281fa416195c62a0ab9ab6.js"></script>
+<script src="https://t0mk.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/t0mk.github.io',
+            CONTENT_URL: 'https:\/\/t0mk.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://t0mk.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+        collapseDepth: 3,
+    });
+</script>
+
+
+  </body>
+</html>
